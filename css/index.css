@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Poppins;
+  color: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+/* pc */
+@media (max-width: 1057px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+/* tablet */
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+
+/* mobile small */
+
+@media (max-width: 479.98px) {
+  ._container {
+    max-width: none;
+  }
+}
+
+/* ---------------- бургер ----------------------- */
+
+.close-icon-menu,
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .icon-menu {
+    display: flex;
+    position: relative;
+    height: 18px;
+    flex: 0 0 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 40px 0px 20px;
+  }
+
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    background-color: #000000;
+    height: 2px;
+  }
+  .icon-menu span {
+    background-color: #000000;
+    height: 2px;
+  }
+  .close-icon-menu {
+    flex: 0 0 30px;
+    height: 30px;
+    position: relative;
+    margin: 45px 15px 0px 0px;
+  }
+  .close-icon-menu::before,
+  .close-icon-menu::after {
+    content: "";
+    background-color: #000000;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+  }
+
+  .close-icon-menu::before {
+    transform: rotate(45deg);
+  }
+  .close-icon-menu::after {
+    transform: rotate(-45deg);
+  }
+}
+
+/* ------------------- header ----------------------- */
+.header {
+  /*   position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; */
+}
+.header__container {
+  padding-top: 40px;
+}
+
+.header__bdoy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+}
+.header_menu {
+}
+.menu {
+}
+.menu__body {
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .menu__btn,
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 90px 15px 30px 15px;
+    transition: left 0.3s ease 0s;
+  }
+  .header:target .menu__body {
+    left: 0;
+  }
+  .header:target .menu__body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 81px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .header:target .icon-menu {
+    display: none;
+  }
+  .header:target .close-icon-menu {
+    display: flex;
+  }
+  .header:target .menu__btn {
+    margin-top: 200px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .menu__body {
+    flex-direction: column;
+  }
+}
+.menu__list {
+}
+
+.menu__list:not(:last-child) {
+  margin-right: 74px;
+}
+
+@media (max-width: 991.98px) {
+  .menu__list:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .menu__list:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.menu__item {
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #333333;
+}
+
+._active {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+.menu__btn {
+  padding: 14px 56px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 90%;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  background-color: #2c3878;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.menu_buttons {
+  display: flex;
+}
+
+.menu__btn:hover {
+  background-color: #4252af;
+}
+
+/* ---------------- main ----------------- */
+.main {
+  flex: 1 1 auto;
+}
+
+/* ------------ footer ----------------- */
+
+.footer {
+  color: black;
+}
