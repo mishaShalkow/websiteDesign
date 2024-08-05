@@ -150,10 +150,10 @@ body {
 
 /* ------------------- header ----------------------- */
 .header {
-  /*   position: absolute;
+  position: absolute;
   width: 100%;
   top: 0;
-  left: 0; */
+  left: 0;
 }
 .header__container {
   padding-top: 40px;
@@ -279,6 +279,94 @@ body {
 /* ---------------- main ----------------- */
 .main {
   flex: 1 1 auto;
+}
+
+/* --------------- mainScreen ----------------- */
+
+.mainScreen {
+}
+.mainScreen__container {
+}
+
+.mainScreen__body {
+}
+.mainScreen__block-title {
+  display: flex;
+  padding: 191px 0px 0px 0px;
+}
+
+@media (max-width: 1288px) {
+  .mainScreen__block-title {
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mainScreen__block-title {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .mainScreen__block-title {
+    margin-left: 30px;
+  }
+}
+
+.block-title__title {
+  position: fixed;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 140%;
+  color: #333333;
+}
+
+@media (max-width: 767.98px) {
+  .block-title__title {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+  }
+}
+
+.block-title__icon {
+  margin-top: 50px;
+  margin-left: 520px;
+}
+@media (max-width: 1288px) {
+  .block-title__icon {
+    display: none;
+  }
+}
+
+.mainScreen__date {
+  position: fixed;
+  margin-left: 1095px;
+  margin-top: 113px;
+  max-width: 178px;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 1288px) {
+  .mainScreen__date {
+    display: none;
+  }
+}
+.date__title {
+  max-width: 681px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.date__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
 }
 
 /* ------------ footer ----------------- */
