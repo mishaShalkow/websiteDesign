@@ -51,11 +51,10 @@ body {
 }
 
 ._ibg img {
-  position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
   top: 0;
+  left: 0;
   object-fit: cover;
 }
 
@@ -316,7 +315,7 @@ body {
 }
 
 .block-title__title {
-  position: fixed;
+  position: absolute;
   font-weight: 700;
   font-size: 72px;
   line-height: 140%;
@@ -342,7 +341,7 @@ body {
 }
 
 .mainScreen__date {
-  position: fixed;
+  position: absolute;
   margin-left: 1095px;
   margin-top: 113px;
   max-width: 178px;
@@ -367,6 +366,128 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #333333;
+}
+
+.mainScreen__img-block {
+  max-width: 252px;
+}
+.img-block__img {
+  margin-top: -351px;
+}
+
+@media (max-width: 1225px) {
+  .img-block__img {
+    margin-top: -400px;
+  }
+  .img {
+    object-fit: cover;
+  }
+}
+
+.img_style {
+}
+
+.img-block__advatages {
+}
+.advatages {
+  position: relative;
+  margin-top: 90px;
+  left: 861px;
+  background: #2c3878;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1225px) {
+  .advatages {
+    max-width: 200px;
+  }
+}
+.advatages__project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 57px;
+}
+
+.project__qwn {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 160%;
+  color: #ffffff;
+}
+.project__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+/* .advatages__teams {
+}
+.advatages__experience {
+}
+ */
+
+/* ----------------- about-block --------------------- */
+
+.about {
+}
+.about__container {
+}
+
+.about__body {
+  display: flex;
+  margin-top: 160px;
+}
+.about__title {
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.title__title {
+  display: flex;
+}
+.title-h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.title-icon {
+  margin-left: 17px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .title-icon {
+    display: none;
+  }
+}
+.about__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 170%;
+  color: #333333;
+  margin-top: 20px;
+}
+.about__description {
+}
+.description__img {
+}
+.description__person {
+}
+.person__name {
+}
+.person__family {
+}
+.description__about {
+}
+.description__about-img {
+}
+.description__button {
 }
 
 /* ------------ footer ----------------- */
