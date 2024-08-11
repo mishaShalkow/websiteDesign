@@ -437,6 +437,7 @@ body {
 
 .about__body {
   display: flex;
+  flex-direction: column;
   margin-top: 160px;
 }
 .about__title {
@@ -474,20 +475,92 @@ body {
   margin-top: 20px;
 }
 .about__description {
+  display: flex;
+  margin-top: 60px;
+}
+
+@media (max-width: 1225px) {
+  .about__description {
+    flex-wrap: wrap;
+  }
+}
+
+.description {
 }
 .description__img {
 }
 .description__person {
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+
+  position: relative;
+  z-index: 5;
+  margin-left: -75px;
+  margin-top: 27px;
+}
+
+@media (max-width: 1225px) {
+  .description__person {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.perosn__info {
+  display: flex;
+  flex-direction: column;
+}
+.person_icon {
+  margin: 17px 20px;
 }
 .person__name {
+  font-weight: 600;
+  font-size: 18px;
+  list-style: 140%;
+  color: #000000;
 }
 .person__family {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #9c9c9c;
 }
 .description__about {
+  margin-left: 94px;
+  margin-top: 80px;
 }
+
+@media (max-width: 1225px) {
+  .description__about {
+    margin: 40px 0 0 0;
+  }
+}
+
 .description__about-img {
+  max-width: 223px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #9c9c9c;
 }
 .description__button {
+  display: flex;
+  height: 49px;
+  width: 142px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 14px 56px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 90%;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  background-color: #2c3878;
+  cursor: pointer;
 }
 
 /* ------------ footer ----------------- */
