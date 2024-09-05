@@ -1,13 +1,10 @@
-function clickElement(element, clickCount) {
-  let clickCounter = 0;
-  function performClick() {
-    element.click();
-    clickCounter++;
-
-    if (clickCounter < clickCount) {
-      const delay = Math.floor(Math.random() * (900 - 50 + 1)) + 50;
-      setTimeout(performClick, delay);
-    }
+window.onload = function () {
+  let headerMenuLink = [...document.getElementsByClassName("menu__link")];
+  for (let i = 0; i < headerMenuLink.length; i++) {
+    headerMenuLink[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      headerMenuLink.forEach((link) => link.classList.remove("_active"));
+      this.classList.add("_active");
+    });
   }
-  performClick();
-}
+};

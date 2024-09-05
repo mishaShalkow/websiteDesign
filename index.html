@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>websiteDesign</title>
-    <link rel="stylesheet" href="./css/index.css" />л
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900&display=swap"
       rel="stylesheet"
@@ -21,16 +21,16 @@
             <div class="header_menu menu">
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link _active">Home</a></li>
+						<li class="menu__item"><a href="#" id="home" class="menu__link _active">Home</a></li>
 					</ul>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">About Us</a></li>
+						<li class="menu__item"><a href="#" id="About_Us" class="menu__link" onclick="window.location.href = '/pages/about/about.html'">About Us</a></li>
 					</ul>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">Services</a></li>
+						<li class="menu__item"><a href="#" id="Services" class="menu__link">Services</a></li>
 					</ul>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">Our Teams</a></li>
+						<li class="menu__item"><a href="#" id="Our_Teams" class="menu__link">Our Teams</a></li>
 					</ul>
 				</nav>
           </div>
@@ -284,5 +284,6 @@
 			</div>
 		</footer>
     </div>
-  </body>
+	</body>
+	<script src="./js/index.js" defer></script>
 </html>

@@ -1,0 +1,232 @@
+.about-project {
+  margin-top: 191px;
+}
+.about-project__container {
+}
+
+.about-project__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-project__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.about-project__subsitle {
+  max-width: 572px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  margin-top: 36px;
+}
+
+.about-project__img {
+  margin-top: 86px;
+}
+
+@media (max-width: 479.98px) {
+  .about-project__img {
+    margin-top: 56px;
+  }
+}
+._ibg {
+}
+
+/* ----------------- achievement ------------------- */
+
+.achievement {
+  margin-top: 100px;
+}
+.achievement__conainer {
+}
+
+.achievement__body {
+}
+.achievement__title {
+}
+.title {
+}
+.title__title {
+}
+.title-h1 {
+}
+.title-icon {
+}
+.about__subtitle {
+}
+.achievement__block {
+  display: flex;
+  margin-top: 56px;
+}
+
+@media (max-width: 1350px) {
+  .achievement__block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.achievement__img {
+}
+._ibg {
+}
+.mainScreen__img-block {
+}
+
+@media (max-width: 1350px) {
+  .mainScreen__img-block {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.img-block__advatages {
+}
+.advatages {
+  padding: 40px 48px 44px 40px;
+  margin: 0;
+  left: 59px;
+}
+
+@media (max-width: 1225px) {
+  .advatages {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .advatages {
+    align-items: center;
+    justify-content: space-around;
+    left: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.advatages__project {
+}
+
+@media (max-width: 1350px) {
+  .advatages__project {
+    margin: 20px 0px 30px 0px;
+  }
+}
+.project__qwn {
+}
+
+@media (max-width: 991.98px) {
+  .project__qwn {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .project__qwn {
+    font-size: 20px;
+  }
+}
+
+.project__subtitle {
+}
+@media (max-width: 479.98px) {
+  .project__subtitle {
+    font-size: 10px;
+  }
+}
+
+/* ----------- achive --------------- */
+
+.service-about {
+  margin-top: 100px;
+}
+.service-about_container {
+}
+
+.service-about__body {
+}
+
+/* -------bm -------------- */
+.service__title {
+}
+.title {
+}
+.title__title {
+}
+.title-h1 {
+}
+.title-icon {
+}
+.title__subtitle {
+}
+.service__title-descrip {
+}
+
+/* ---------------- ---------------- */
+
+.service-about__achiv {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 991.98px) {
+  .service-about__achiv {
+    flex-wrap: wrap;
+  }
+}
+
+.achiv_block {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 1px #0000001a;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 27px 22px 27px;
+}
+@media (max-width: 991.98px) {
+  .achiv_block:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.achiv_icon {
+}
+
+.achiv__titile {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
+}
+
+@media (max-width: 479.98px) {
+  .achiv__titile {
+    font-size: 18px;
+  }
+}
+
+.achiv_subtitle {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #9c9c9c;
+  max-width: 334px;
+}
+@media (max-width: 479.98px) {
+  .achiv_subtitle {
+    font-size: 13px;
+  }
+}
+
+.footer__body {
+  margin-bottom: 54px;
+}
