@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/pages/about/about.css" />
   </head>
   <body>
+	<div class="wrapper">
 	<header id="open" class="header">
 		<div id="close" class="header__container _container">
 		  <div class="header__bdoy">
@@ -35,12 +36,13 @@
 			 </nav>
 		  </div>
 		  <div class="menu_buttons">
-			  <button class="menu__btn">Contact Us</button>
+			  <button class="menu__btn" onclick="window.location.href = '/pages/contact/contact.html'">Contact Us</button>
 			  <a href="#open" class="icon-menu"><span></span></a>
 			  <a href="#close" class="close-icon-menu"></a>
 		  </div>
 		</div>
 	 </header>
+	 <main class="main">
 	 <section class="about-project">
 		<div class="about-project__container _container">
 			<div class="about-project__body about-project">
@@ -130,6 +132,7 @@
 			</div>
 		</div>
 	</section>
+	</main>
 	 <footer class="footer">
 		<div class="footer__container _container">
 			<div class="footer__body">
@@ -166,5 +169,6 @@
 			</div>
 		</div>
 	</footer>
+	</div>
   </body>
 </html>
