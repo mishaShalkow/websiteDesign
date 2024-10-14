@@ -678,6 +678,7 @@ body {
   margin-top: 40px;
 }
 .link_items {
+  cursor: pointer;
 }
 
 .items {
@@ -903,6 +904,7 @@ body {
 }
 .items__icon-link {
   margin-left: 579px;
+  cursor: pointer;
 }
 
 @media (max-width: 991.98px) {
@@ -1181,6 +1183,7 @@ body {
   }
 }
 .body_decor-icon {
+  cursor: pointer;
 }
 
 @media (max-width: 479.98px) {
@@ -1221,6 +1224,7 @@ body {
   justify-content: center;
 }
 .links__link {
+  cursor: pointer;
 }
 
 .links__link:not(:last-child) {
