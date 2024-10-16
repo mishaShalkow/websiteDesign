@@ -1,0 +1,216 @@
+.forms {
+  margin-top: 51px;
+}
+.forms__container {
+}
+
+.forms__body {
+}
+
+label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9c9c9c;
+  padding: 18px 256px 18px 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  background: #ffffff;
+  width: 413px;
+  height: 62px;
+  border: 1px solid #9c9c9c;
+  margin-top: 10px;
+}
+
+#lastName {
+  background: #ffffff;
+  width: 413px;
+  height: 62px;
+  border: 1px solid #9c9c9c;
+  margin-top: 10px;
+}
+
+#message {
+  width: 839px;
+  height: 178px;
+  border: 1px solid #9c9c9c;
+  background: #ffffff;
+  margin-top: 10px;
+}
+
+#bnt__contact {
+  margin-top: 40px;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#email {
+  width: 840px;
+  height: 62px;
+  border: 1px solid #9c9c9c;
+  background: #ffffff;
+  margin-top: 10px;
+}
+
+#phoneNumber {
+  width: 840px;
+  height: 62px;
+  border: 1px solid #9c9c9c;
+  background: #ffffff;
+  margin-top: 10px;
+}
+.form__name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+.form__Lastname {
+  display: flex;
+  flex-direction: column;
+}
+
+.surname {
+  display: flex;
+}
+
+.form__phoneN {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form__message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.location {
+  margin-top: 100px;
+}
+.location__container {
+}
+
+.location__body {
+}
+.location__stor {
+  display: flex;
+  margin-top: 32px;
+}
+.location__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.location_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.location_block-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
+}
+.location_block-subtitile {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #9c9c9c;
+}
+
+.location__header {
+}
+.location__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 170%;
+  color: #333333;
+  width: 279px;
+}
+.location__subtitle {
+  margin-top: 24px;
+}
+.location__email {
+  margin-top: 39px;
+}
+.location__emeil-title {
+}
+.location__email-subtitle {
+  margin-top: 10px;
+}
+.location__phone {
+  margin-top: 33px;
+}
+
+.location__subtitle-phone {
+  margin-top: 10px;
+}
+
+.location__phone-title {
+}
+.location__contry {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 193px;
+}
+.location__jacart {
+}
+.location__jacart-title {
+}
+.location__jacart-subtitle {
+  margin-top: 30px;
+  max-width: 334px;
+  max-height: 116px;
+}
+.location__surakarta {
+  margin-left: 60px;
+}
+.location__surakarta-title {
+}
+.location__surakarta-subtitle {
+  margin-top: 30px;
+  max-width: 334px;
+  max-height: 116px;
+}
+.location__yogyakarta {
+  margin-top: 41px;
+}
+.location__yogyakarta-title {
+}
+.location__yogyakarta-subtitle {
+  margin-top: 30px;
+  max-width: 334px;
+  max-height: 116px;
+}
+.location__bandung {
+  margin-top: 41px;
+  margin-left: 60px;
+}
+.location__bandung-title {
+}
+.location__bandung-subtitle {
+  margin-top: 30px;
+  max-width: 334px;
+  max-height: 116px;
+}
