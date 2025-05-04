@@ -1,7 +1,13 @@
 .forms {
   margin-top: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .forms__container {
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .forms__body {
@@ -12,6 +18,7 @@ label {
   font-size: 18px;
   line-height: 150%;
   color: #333333;
+  display: block;
 }
 
 ::placeholder {
@@ -27,6 +34,12 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 874px) {
+  .form {
+    align-items: baseline;
+  }
 }
 
 #name {
@@ -53,8 +66,30 @@ label {
   margin-top: 10px;
 }
 
+@media (max-width: 874px) {
+  #message {
+    width: 413px;
+  }
+}
+
 #bnt__contact {
   margin-top: 40px;
+}
+
+.menu_buttons-contacts {
+  display: flex;
+}
+
+.menu__btn-contact {
+  padding: 14px 56px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 90%;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  background-color: #2c3878;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
 }
 
 .form__email {
@@ -71,6 +106,12 @@ label {
   margin-top: 10px;
 }
 
+@media (max-width: 874px) {
+  #email {
+    width: 413px;
+  }
+}
+
 #phoneNumber {
   width: 840px;
   height: 62px;
@@ -78,6 +119,13 @@ label {
   background: #ffffff;
   margin-top: 10px;
 }
+
+@media (max-width: 874px) {
+  #phoneNumber {
+    width: 413px;
+  }
+}
+
 .form__name {
   display: flex;
   flex-direction: column;
@@ -93,11 +141,22 @@ label {
   display: flex;
 }
 
+@media (max-width: 874px) {
+  .surname {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__email {
+}
+
 .form__phoneN {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
+
 .form__message {
   display: flex;
   flex-direction: column;
@@ -116,6 +175,15 @@ label {
   display: flex;
   margin-top: 32px;
 }
+
+@media (max-width: 740px) {
+  .location__stor {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .location__contacts {
   display: flex;
   flex-direction: column;
@@ -174,6 +242,28 @@ label {
   flex-wrap: wrap;
   margin-left: 193px;
 }
+
+@media (max-width: 1194px) {
+  .location__contry {
+    margin-left: 380px;
+  }
+}
+
+@media (max-width: 1038px) {
+  .location__contry {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 740px) {
+  .location__contry {
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .location__jacart {
 }
 .location__jacart-title {
@@ -213,4 +303,25 @@ label {
   margin-top: 30px;
   max-width: 334px;
   max-height: 116px;
+}
+
+@media (max-width: 1228px) {
+  .location_block {
+    margin: 0px 0px 30px 10px;
+  }
+}
+
+@media (max-width: 989px) {
+  .location_block {
+    margin: 0px 0px 90px 0px;
+  }
+}
+
+@media (max-width: 740px) {
+  .location_block {
+    margin: 0px 0px 70px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
