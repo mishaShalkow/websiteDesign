@@ -10,6 +10,12 @@
   max-width: 400px;
 }
 
+@media (max-width: 874px) {
+  .forms__container {
+    width: auto;
+  }
+}
+
 .forms__body {
 }
 
@@ -38,7 +44,7 @@ label {
 
 @media (max-width: 874px) {
   .form {
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -50,12 +56,24 @@ label {
   margin-top: 10px;
 }
 
+@media (max-width: 430px) {
+  #name {
+    width: 300px;
+  }
+}
+
 #lastName {
   background: #ffffff;
   width: 413px;
   height: 62px;
   border: 1px solid #9c9c9c;
   margin-top: 10px;
+}
+
+@media (max-width: 430px) {
+  #lastName {
+    width: 300px;
+  }
 }
 
 #message {
@@ -69,6 +87,12 @@ label {
 @media (max-width: 874px) {
   #message {
     width: 413px;
+  }
+}
+
+@media (max-width: 430px) {
+  #message {
+    width: 300px;
   }
 }
 
@@ -112,6 +136,12 @@ label {
   }
 }
 
+@media (max-width: 430px) {
+  #email {
+    width: 300px;
+  }
+}
+
 #phoneNumber {
   width: 840px;
   height: 62px;
@@ -126,10 +156,22 @@ label {
   }
 }
 
+@media (max-width: 430px) {
+  #phoneNumber {
+    width: 300px;
+  }
+}
+
 .form__name {
   display: flex;
   flex-direction: column;
   margin-right: 14px;
+}
+
+@media (max-width: 874px) {
+  .form__name {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .form__Lastname {
