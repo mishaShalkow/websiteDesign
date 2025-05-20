@@ -1,38 +1,56 @@
-const form = document.getElementById("myForms");
+const request = indexedDB.open("FormDatabase", 1);
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+request.onupgradeneeded = function (event) {
+  const db = event.target.result;
+  // Создание хранилища объектов для формы
+  let objectStore = db.createObjectStore("formData", {
+    keyPath: "id",
+    autoIncrement: true,
+  });
+  // Создание индексов для поиска данных
+  objectStore.createIndex("name", "name", { unique: true });
+  objectStore.createIndex("lastName", "lastName", { unique: true });
+  objectStore.createIndex("email", "email", { unique: true });
+  objectStore.createIndex("phoneNumber", "phoneNumber", { unique: true });
+  objectStore.createIndex("message", "message", { unique: true });
+};
 
-  const name = document.getElementById("name").value;
-  const lastName = document.getElementById("lastName").value;
-  const email = document.getElementById("email").value;
-  const phoneNumber = document.getElementById("phoneNumber").value;
-  const message = document.getElementById("message").value;
+request.onsuccess = function (event) {
+  const db = event.target.result;
 
-  const data = {
-    name: name,
-    lastName: lastName,
-    email: email,
-    phoneNumber: phoneNumber,
-    message: message,
-  };
+  // Обработчик отправки формы
+  document
+    .getElementById("myForms")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
 
-  localStorage.setItem("name", name);
-  localStorage.setItem("lastname", lastName);
-  localStorage.setItem("email", email);
-  localStorage.setItem("phoneNumber", phoneNumber);
-  localStorage.setItem("message", message);
-  const jsondata = JSON.stringify(data);
+      // Получение данных из формы
+      let formData = {
+        name: document.getElementById("name").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phoneNumber: document.getElementById("phoneNumber").value,
+        message: document.getElementById("message").value,
+      };
 
-  const fileName = "data.json";
-  const file = new Blob([jsondata], { type: "application/json" });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(file);
-  link.download = fileName;
-  link.click();
+      // Сохранение данных в IndexedDB
+      let transaction = db.transaction(["formData"], "readwrite");
+      let objectStore = transaction.objectStore("formData");
+      let request = objectStore.add(formData);
 
-  /*   console.log(jsondata);
-   */
-  form.reset();
-  alert("ваш запрос успешно отправлен");
-});
+      request.onsuccess = function (event) {
+        console.log("Данные успешно сохранены");
+        alert("Данные успешно сохранены");
+      };
+
+      request.onerror = function (event) {
+        console.log("Ошибка при сохранении данных");
+        alert("Ошибка при сохранении данных");
+      };
+    });
+};
+
+request.onerror = function (event) {
+  console.log("Ошибка при открытии базы данных");
+  alert("Ошибка при открытии базы данных");
+};
